@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+@font-face {
+    font-family: "MyIcon";
+    src: url("../font/glyphicons-halflings-regular.woff2");
+}
+
+body{
+    position: relative;
+    background-image: url(../img/bg.jpg);
+    text-align: center;
+}
+.header{
+    height: 50px;
+    background-color: #000;
+    position: relative;
+}
+.header .container{
+    position: relative;
+    width: 1170px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px auto;
+}
+.container > a{
+    font-size: 18px;
+    color: #eee;
+    float: left;
+    margin: 0 15px;
+}
+.container .menu{
+    float: left;
+}
+.container .menu > li {
+    float: left;
+}
+.container .menu > li > a{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 14px;
+    color: #fff;
+}
+.container .menu > li > a:hover{
+    color: rgb(150, 138, 255);
+}
+.container .search-bar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.container .search-bar input{
+    position: absolute;
+    right: 60px;
+    top: calc(50% - 15px);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    height: 22px;
+    padding: 5px 10px;
+}
+.container .search-bar button{
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 50px;
+    right: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 6px 10px;
+    color: #3c3c3c;
+    outline: none;
+    border: none;
+}
+
+.content{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1170px;
+}
+.content .content-left{
+    width: 66%;
+    float: left;
+    text-align: left;
+}
+.content .right-content{
+    width: 34%;
+    float: right;
+}
+
+.right-content > .right-module{
+    color: #fff;
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.right-content > .right-module > .title{
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.right-content > .right-module > a{
+    display: inline-block;
+    color: #eee;
+    font-size: 14px;
+    padding: 5px;
+}
+.right-content > .right-module .tag:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+.right-content > .right-module > ul > li{
+    padding: 10px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.right-content > .right-module > ul > li > a{
+    color: #ddd;
+}
+.right-content > .right-module > ul > li > a:hover{
+    color: white;
+}
+.right-content > .right-module .userName{
+    color: rgba(255, 255, 255, .8);
+}
+.right-content > .right-module .pudate{
+    float: right;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.7);
+    font-size: 12px;
+}
+.right-content > .right-module .contents{
+    color: rgba(255,255,255,.9);
+    font-size: 14px;
+}
+.right-content > .right-module > .link{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 5px 10px;
+}
+.right-content > .right-module > .link:hover{
+    text-decoration: underline;
+}
+.footer{
+    margin-top: 20px;
+    padding: 20px 0px;
+    color: #a2a2a2;
+    font-size: 14px;
+    background: #191818;
+}
+.footer > ul > li{
+    display: inline-block;
+}
+.footer > p{
+    margin: 10px 0px;
+}
+
+.guestbooks > span{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+.guestbooks > .guestbook{
+    width: 96%;
+    box-sizing: border-box;
+    border: 1px dashed rgba(0, 0, 0, .5);
+    padding: 15px 10px 10px 15px;
+    background-color: rgb(185, 222, 255);
+    font-size: 14px;
+}
+.guestbooks > .guestbook > .guestbook-info{
+    margin-bottom: 10px;
+}
+.guestbooks > .guestbook  .user-name{
+    margin: 5px 0px 0px 20px;
+}
+.guestbooks > .guestbook .pudate{
+    margin: 5px 0px 0px 10px;
+}
+.guestbooks > .guestbook .reply{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #777777;
+}
+.guestbooks > .guestbook .reply:hover{
+    text-decoration: underline;
+}
+.guestbooks > .guestbook > .guestbook-content{
+    padding: 0px 30px;
+}
+
+
+.send-comment{
+    width: 96%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+.send-comment input{
+    width: 300px;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin: 15px 15px 10px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.send-comment textarea{
+    width: 638px;
+    height: 150px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px 10px;
+    outline: none;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+.send-comment button{
+    margin: 5px 0px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.send-comment button:active{
+    color: white;
+    background: gray;
+}
+
+.page{
+    text-align: center;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    width: 96%;
+}
+.page > ul > li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    background: white;
+    cursor: default;
+    border-radius: 50%;
+    user-select: none;
+}
+.page > ul > li.nowPage{
+    background: gray;
+    color: white;
+}
+.page > ul > li:hover{
+    background: rgb(187, 178, 178);
+    color: white;
+}
